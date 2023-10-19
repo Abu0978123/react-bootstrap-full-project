@@ -1,0 +1,20 @@
+.about-wrapper {
+  z-index: 3;
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 0.0625rem solid var(--primary-orange);
+}
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-heading {
+  color: var(--primary-orange);
+}

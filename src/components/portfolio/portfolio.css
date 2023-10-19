@@ -1,0 +1,74 @@
+.portfolio-img {
+  width: 100%;
+  border: 0.0625rem solid var(--primary-orange);
+  padding: 0 0.5rem;
+  box-shadow: inset 0 0 0.625rem 0 rgba(0, 0, 0, 1);
+}
+
+.portfolio-img:hover {
+  border: 0.0625rem solid var(--primary-red);
+  box-shadow: inset 0 0 1.25rem 0 rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.portfolio-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-dark);
+  padding: 13rem;
+  width: 60rem;
+  height: 30rem;
+  z-index: 1010;
+}
+
+.portfolio-info h2 {
+  color: var(--primary-orange);
+}
+
+.portfolio-info img {
+  width: 80%;
+}
+
+.portfolio-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  background: var(--primary-black);
+  z-index: 1000;
+}
+
+.cancelIcon {
+  margin-left: 30rem;
+  color: var(--primary-red) !important;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.cancelIcon:hover {
+  color: var(--primary-red-hover) !important;
+  cursor: pointer;
+}
+
+/******* MEDIA ******/
+@media (max-width: 57rem) {
+  .cancelIcon {
+    margin-left: 0;
+  }
+
+  .portfolio-info img {
+    width: 60% !important;
+  }
+
+  .portfolio-info p {
+    padding: 0 6rem !important;
+  }
+}

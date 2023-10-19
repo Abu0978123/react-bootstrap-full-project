@@ -1,0 +1,40 @@
+.logo {
+  width: 16.25rem;
+}
+
+nav {
+  z-index: 2;
+}
+
+/*------ MENU LINKS -------*/
+nav a.nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav li a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-nav li a.active,
+.navbar-nav li a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav li a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 13rem;
+  }
+}
